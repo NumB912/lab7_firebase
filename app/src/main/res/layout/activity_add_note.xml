@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".EditNoteActivity">
+
+    <!-- CardView for the Title -->
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="16dp">
+
+        <EditText
+            android:id="@+id/addNoteTitle"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:autofillHints=""
+            android:background="@android:color/white"
+            android:hint="Tiêu đề"
+            android:padding="10dp"
+            android:textSize="18sp" />
+    </androidx.cardview.widget.CardView>
+
+    <!-- CardView for the Content -->
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardContent"
+        android:layout_width="379dp"
+        android:layout_height="250dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="16dp"
+        app:cardBackgroundColor="#FFFFFF"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="4dp"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="3dp">
+
+        <EditText
+            android:id="@+id/addNoteContent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="10dp"
+            android:autofillHints=""
+            android:background="@android:color/white"
+            android:gravity="start"
+            android:hint="@string/n_i_dung"
+            android:inputType="textMultiLine"
+            android:padding="4dp"
+            android:textSize="16sp" />
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/saveNoteButton"
+        android:layout_width="380dp"
+        android:layout_height="69dp"
+        android:layout_marginTop="16dp"
+        android:text="Lưu"
+        android:textColor="#FFFFFF"
+        android:textSize="18sp" />
+
+    <!-- Save Button -->
+
+</LinearLayout>
